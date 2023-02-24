@@ -11,12 +11,15 @@
   "preconstruct": {
     "entrypoints": [
       "index.ts",
-      "entireMetricsCollection.ts"
+      "entireMetricsCollection.ts",
+      "*.{js,d.ts}"
     ]
   },
   "files": [
     "/dist",
-    "/entireMetricsCollection"
+    "/entireMetricsCollection",
+    "/*.js",
+    "/*.d.ts"
   ],
   "scripts": {
     "clean": "ts-node scripts/clean",
